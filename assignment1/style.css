@@ -1,0 +1,95 @@
+body{
+    margin: 0;      /* Removes the default page body margins */
+    padding: 0;     /* Removes the default body padding of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('b2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+form{
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    background:linear-gradient(90deg,rgb(178, 175, 201), rgb(108, 108, 111) 35%,rgba(0,212,255,1) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+form label {
+    color: #ffffff; 
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="tel"],
+form select,
+form input[type="radio"],
+form input[type="checkbox"] {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+
+form select {
+    height: 2.5rem;
+}
+
+button#eye,
+button#eye2 {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 0.5rem;
+}
+
+button#submit {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button#submit:hover {
+    background-color: #218838; 
+}
+
+#passwordStrong,
+#passwordNotMatch {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#passwordStrong {
+    color: #ffc107; 
+}
+
+#passwordNotMatch {
+    color: #dc3545; 
+}
+
+/* for smaller devices */
+@media (max-width: 576px) {
+    form {
+        padding: 1rem;
+    }
+}
+
+
